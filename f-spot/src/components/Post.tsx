@@ -98,7 +98,7 @@ export default function PostForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
-    const token = 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJpZCI6MiwiaWF0IjoxNzAwODM1NzkxLCJleHAiOjE3MDIzMDcwMjB9.K2e6qXrcbQh-x9RrWgGLC_n403IfxgIEphWNor2fsdI';
+    const token='';
   
     // Create a new FormData object
     const formData = new FormData();
@@ -117,8 +117,7 @@ export default function PostForm() {
     console.log("Form data:", formData);
   
     try {
-      const response = await axios.post(
-        `http://ec2-13-124-152-41.ap-northeast-2.compute.amazonaws.com/board/add`,
+      const response = await axios.post,
         formData,
         {
           headers: {
