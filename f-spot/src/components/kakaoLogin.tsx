@@ -5,7 +5,7 @@ const CenteredContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh; 
 `;
 
 const LoginButton = styled.button`
@@ -19,11 +19,11 @@ const LoginButton = styled.button`
 `;
 
 const Login = () => {
-  const Rest_api_key = '9607a85595de4234fdbd580066c0b4b2';
+  const Rest_api_key = '';
   const redirect_uri = 'http://localhost:3000/Login'; // Redirect URI
 
   // OAuth 요청 URL
-  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${Rest_api_key}&redirect_uri=${redirect_uri}&response_type=code`;
+  const kakaoURL = ``;
 
   const handleLogin = () => {
     window.location.href = kakaoURL;
