@@ -43,7 +43,7 @@ const KakaoMap = () => {
             setCurrentLocationMarker(currentLocationMarkerInstance);
 
             // Fetch marker data from the server using Axios
-            axios.get("http://ec2-13-124-152-41.ap-northeast-2.compute.amazonaws.com/board/list")
+            axios.get(")
               .then((response) => {
                 const data = response.data.result;
                 //console.log(data);
@@ -183,10 +183,10 @@ const KakaoMap = () => {
 
   const fetchBoardInformation = (boardId: any) => {
     // Replace 'your-jwt-token' with the actual JWT token
-    const jwtToken = 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJpZCI6MiwiaWF0IjoxNzAwODM1NzkxLCJleHAiOjE3MDIzMDcwMjB9.K2e6qXrcbQh-x9RrWgGLC_n403IfxgIEphWNor2fsdI';
+    const jwtToken = '';
 
     // Make a GET request to fetch board information
-    axios.get(`http://ec2-13-124-152-41.ap-northeast-2.compute.amazonaws.com/board/${boardId}`, {
+    post.get{
       headers: {
         'X-ACCESS-TOKEN': jwtToken,
       },
